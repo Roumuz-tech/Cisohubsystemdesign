@@ -20,7 +20,7 @@ set -euo pipefail
 # ============================================================================
 # CONFIGURE THESE TWO LINES, then commit + push this script.
 # ============================================================================
-REPO="YOUR_GITHUB_USERNAME/YOUR_REPO_NAME"   # e.g. "acme/ciso-hub-template"
+REPO="Roumuz-tech/Cisohubsystemdesign"   # e.g. "acme/ciso-hub-template"
 BRANCH="main"
 # ============================================================================
 
