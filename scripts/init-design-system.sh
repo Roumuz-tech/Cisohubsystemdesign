@@ -20,7 +20,7 @@ set -euo pipefail
 # ============================================================================
 # CONFIGURE THESE TWO LINES, then commit + push this script.
 # ============================================================================
-REPO="Roumuz-tech/Cisohubsystemdesign"   # e.g. "acme/ciso-hub-template"
+REPO="Roumuz-tech/Cisohubsystemdesign"
 BRANCH="main"
 # ============================================================================
 
@@ -46,8 +46,8 @@ echo ""
 
 # --- 1. Root rules files ----------------------------------------------------
 echo "▶ Rules & docs"
-fetch "CLAUDE.md"                      "CLAUDE.md"
-fetch "DESIGN_SYSTEM_STARTER.md"       "DESIGN_SYSTEM_STARTER.md"
+fetch "src/CLAUDE.md"                  "CLAUDE.md"
+fetch "src/DESIGN_SYSTEM_STARTER.md"   "DESIGN_SYSTEM_STARTER.md"
 
 # --- 2. Styles --------------------------------------------------------------
 echo ""
