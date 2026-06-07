@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Source: §D.4 F-069 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:380px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:10px">
+  <div class="lbl">Sheet width variants · <span class="val">F-069</span></div>
+
+  <div style="position:relative;border:1px solid var(--color-border);border-radius:8px;height:240px;background:var(--color-muted);overflow:hidden">
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,.30);backdrop-filter:blur(4px)"></div>
+
+    <div style="position:absolute;inset-block:0;inset-inline-end:0;width:55%;background:var(--color-background);box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;font:500 13px Inter;color:var(--color-foreground)">
+      Wide · ~750px
+    </div>
+    <div style="position:absolute;inset-block:0;inset-inline-end:0;width:40%;background:var(--color-background);box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;font:500 13px Inter;color:var(--color-foreground);border-inline-start:1px solid var(--color-border)">
+      Medium · sm:max-w-lg (512px)
+    </div>
+    <div style="position:absolute;inset-block:0;inset-inline-end:0;width:28%;background:var(--color-background);box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;font:500 13px Inter;color:var(--color-foreground);border-inline-start:1px solid var(--color-border)">
+      Default sm · 384px
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:4px;margin-top:6px">
+    <div class="val">Default (sm): w-3/4 sm:max-w-sm → ~384px — Form/Filter panel</div>
+    <div class="val">Medium:       sm:max-w-lg → ~512px — Detail form</div>
+    <div class="val">Wide:         ~750px (custom) — Master-Detail (F-065)</div>
+    <div class="val">Full:         w-full — Complex tabbed detail</div>
+  </div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §D.4 F-069 · sheet.tsx widths</div></div></body></html>

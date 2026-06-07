@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:280px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+
+</style></head><body><div class="card">
+<div style="border:1px solid #e4e4e7;border-radius:8px;overflow:hidden">
+  <div style="display:grid;grid-template-columns:32px 2fr 1fr 1fr 1.2fr 90px;align-items:center;background:rgba(244,244,245,.4);height:40px;padding:0 16px;gap:16px;font:500 12px Inter;color:#52525b">
+    <input type="checkbox" style="accent-color:#3b82f6">
+    <div style="display:flex;align-items:center;gap:4px">User <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></svg></div>
+    <div>Role</div><div>Status</div><div>Last seen</div><div>Actions</div>
+  </div>
+  
+    <div style="display:grid;grid-template-columns:32px 2fr 1fr 1fr 1.2fr 90px;align-items:center;height:54px;padding:0 16px;gap:16px;border-top:1px solid #e4e4e7;font:400 13px Inter">
+      <input type="checkbox" style="accent-color:#3b82f6">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:32px;height:32px;border-radius:50%;background:#3b82f6;color:#fff;display:flex;align-items:center;justify-content:center;font:600 12px Inter">A</div>
+        <div><div style="font-weight:500">Ahmed Saleh</div><div style="color:#71717a;font-size:12px">ahmed@cisohub.app</div></div>
+      </div>
+      <div>CISO</div>
+      <div><span style="display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:6px;background:#22c55e1a;color:#15803d;font:500 11px Inter">Active</span></div>
+      <div style="color:#71717a">2m ago</div>
+      <div style="display:flex;gap:2px;color:#71717a">
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:32px 2fr 1fr 1fr 1.2fr 90px;align-items:center;height:54px;padding:0 16px;gap:16px;border-top:1px solid #e4e4e7;font:400 13px Inter">
+      <input type="checkbox" style="accent-color:#3b82f6">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:32px;height:32px;border-radius:50%;background:#22c55e;color:#fff;display:flex;align-items:center;justify-content:center;font:600 12px Inter">L</div>
+        <div><div style="font-weight:500">Layla Khan</div><div style="color:#71717a;font-size:12px">layla@cisohub.app</div></div>
+      </div>
+      <div>GRC Analyst</div>
+      <div><span style="display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:6px;background:#f59e0b1a;color:#b45309;font:500 11px Inter">Pending</span></div>
+      <div style="color:#71717a">1h ago</div>
+      <div style="display:flex;gap:2px;color:#71717a">
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:32px 2fr 1fr 1fr 1.2fr 90px;align-items:center;height:54px;padding:0 16px;gap:16px;border-top:1px solid #e4e4e7;font:400 13px Inter">
+      <input type="checkbox" style="accent-color:#3b82f6">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:32px;height:32px;border-radius:50%;background:#a1a1aa;color:#fff;display:flex;align-items:center;justify-content:center;font:600 12px Inter">M</div>
+        <div><div style="font-weight:500">Mike Park</div><div style="color:#71717a;font-size:12px">mike@cisohub.app</div></div>
+      </div>
+      <div>Auditor</div>
+      <div><span style="display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:6px;background:#ef44441a;color:#b91c1c;font:500 11px Inter">Expired</span></div>
+      <div style="color:#71717a">3d ago</div>
+      <div style="display:flex;gap:2px;color:#71717a">
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+        <button style="width:26px;height:26px;border:none;background:transparent;color:#71717a;cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+      </div>
+    </div>
+</div>
+</div></body></html>

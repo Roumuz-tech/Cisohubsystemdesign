@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- Source: §E.7 Password Reset -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:480px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="background:var(--color-muted);padding:20px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:380px">
+  <div style="background:var(--color-card);border:1px solid var(--color-border);border-radius:12px;box-shadow:var(--shadow-xs);max-width:370px;width:100%">
+    <div style="padding:40px">
+      <div style="margin-bottom:22px">
+        <div style="font:600 20px Inter;letter-spacing:-.01em">Reset password</div>
+        <div style="font:400 14px Inter;color:var(--color-muted-foreground);margin-top:6px">Enter your email and we'll send a reset link.</div>
+      </div>
+      <form style="display:flex;flex-direction:column;gap:14px">
+        <input type="email" placeholder="Work email" style="height:34px;padding:0 12px;border:1px solid var(--color-border);border-radius:6px;font:400 13px Inter;background:var(--color-background);color:var(--color-foreground);box-shadow:var(--shadow-xs);outline:none">
+        <button type="submit" style="width:100%;height:34px;background:var(--color-primary);color:var(--color-primary-foreground);border:1px solid transparent;border-radius:6px;font:500 13px Inter;box-shadow:var(--shadow-xs);cursor:pointer">Send reset link</button>
+      </form>
+      <a style="display:inline-flex;align-items:center;gap:6px;margin-top:18px;font:400 13px Inter;color:var(--color-muted-foreground);text-decoration:none;cursor:pointer">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Login
+      </a>
+    </div>
+  </div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §E.7 · password reset flow (signin variant)</div></div></body></html>

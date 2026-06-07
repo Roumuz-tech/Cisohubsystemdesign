@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- Source: §F.16 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:200px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:18px">
+  <div>
+    <div class="lbl" style="margin-bottom:8px">Horizontal · <span class="val">h-[1px] w-full bg-border</span></div>
+    <div style="height:1px;width:100%;background:var(--color-border)"></div>
+  </div>
+  <div>
+    <div class="lbl" style="margin-bottom:8px">Vertical · <span class="val">h-full w-[1px] bg-border</span> — production stretches to parent; demo uses fixed 24px</div>
+    <div style="display:flex;align-items:center;gap:14px;height:40px">
+      <span style="font:500 13px Inter">Profile</span>
+      <span style="width:1px;height:24px;background:var(--color-border)"></span>
+      <span style="font:500 13px Inter">Settings</span>
+      <span style="width:1px;height:24px;background:var(--color-border)"></span>
+      <span style="font:500 13px Inter">Sign out</span>
+    </div>
+  </div>
+  <div class="src">Source: 03_Components_v1_1.md §F.16 · separator.tsx</div>
+</div></div></body></html>

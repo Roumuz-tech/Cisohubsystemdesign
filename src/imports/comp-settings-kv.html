@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- Source: §E.4 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:380px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:16px">
+  <div class="lbl">Editable variant (default) · <span class="val">align-middle text-sm py-2</span></div>
+
+  <table style="width:100%;border-collapse:collapse;font:400 14px Inter;color:var(--color-muted-foreground);vertical-align:middle;border:1px solid var(--color-border);border-radius:8px;overflow:hidden">
+    <tbody>
+      
+        <tr style="border-bottom:1px solid var(--color-border)">
+          <td style="padding:10px 16px;min-width:200px;color:var(--color-foreground);font-weight:400">Account name</td>
+          <td style="padding:10px 16px;min-width:240px;width:100%;color:var(--color-foreground)">Saudi British Bank</td>
+          <td style="padding:10px 16px;width:36px;text-align:end">
+            <button style="width:28px;height:28px;background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center" onmouseover="this.style.background='var(--color-accent)'" onmouseout="this.style.background='transparent'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+          </td>
+        </tr>
+      
+        <tr style="border-bottom:1px solid var(--color-border)">
+          <td style="padding:10px 16px;min-width:200px;color:var(--color-foreground);font-weight:400">Tenant ID</td>
+          <td style="padding:10px 16px;min-width:240px;width:100%;color:var(--color-foreground)">sb-001 (vCISO-managed)</td>
+          <td style="padding:10px 16px;width:36px;text-align:end">
+            
+          </td>
+        </tr>
+      
+        <tr style="border-bottom:1px solid var(--color-border)">
+          <td style="padding:10px 16px;min-width:200px;color:var(--color-foreground);font-weight:400">Plan</td>
+          <td style="padding:10px 16px;min-width:240px;width:100%;color:var(--color-foreground)">Enterprise · 12 frameworks</td>
+          <td style="padding:10px 16px;width:36px;text-align:end">
+            <button style="width:28px;height:28px;background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center" onmouseover="this.style.background='var(--color-accent)'" onmouseout="this.style.background='transparent'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+          </td>
+        </tr>
+      
+        <tr style="border-bottom:1px solid var(--color-border)">
+          <td style="padding:10px 16px;min-width:200px;color:var(--color-foreground);font-weight:400">Primary contact</td>
+          <td style="padding:10px 16px;min-width:240px;width:100%;color:var(--color-foreground)">Ahmed Saleh · CISO</td>
+          <td style="padding:10px 16px;width:36px;text-align:end">
+            <button style="width:28px;height:28px;background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center" onmouseover="this.style.background='var(--color-accent)'" onmouseout="this.style.background='transparent'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+          </td>
+        </tr>
+      
+        <tr style="border-bottom:1px solid var(--color-border)">
+          <td style="padding:10px 16px;min-width:200px;color:var(--color-foreground);font-weight:400">MFA enforcement</td>
+          <td style="padding:10px 16px;min-width:240px;width:100%;color:var(--color-foreground)">Required for all users</td>
+          <td style="padding:10px 16px;width:36px;text-align:end">
+            <button style="width:28px;height:28px;background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center" onmouseover="this.style.background='var(--color-accent)'" onmouseout="this.style.background='transparent'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+          </td>
+        </tr>
+      
+        <tr style="">
+          <td style="padding:10px 16px;min-width:200px;color:var(--color-foreground);font-weight:400">Default language</td>
+          <td style="padding:10px 16px;min-width:240px;width:100%;color:var(--color-foreground)">Arabic (RTL)</td>
+          <td style="padding:10px 16px;width:36px;text-align:end">
+            <button style="width:28px;height:28px;background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;border-radius:4px;display:inline-flex;align-items:center;justify-content:center" onmouseover="this.style.background='var(--color-accent)'" onmouseout="this.style.background='transparent'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></button>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <div class="val">Row "Tenant ID" is read-only (no pencil icon) per F-019 read-only variant</div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §E.4 · align-middle text-sm · td py-2 min-w-56 + min-w-60 w-full · F-019 editable+read-only</div></div></body></html>

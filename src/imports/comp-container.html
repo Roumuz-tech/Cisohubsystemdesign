@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- Source: §F.17 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:220px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:14px">
+  <div>
+    <div class="lbl" style="margin-bottom:6px"><span class="val">width="fixed"</span> (default) · <span class="val">w-full mx-auto px-4 lg:px-6 max-w-[1320px]</span></div>
+    <div style="background:var(--color-muted);padding:8px;border-radius:6px">
+      <div style="background:var(--color-background);border:1px dashed var(--color-border);border-radius:4px;max-width:1320px;margin:0 auto;padding:0 16px;font:500 12px Inter;line-height:48px">
+        Container width="fixed" — centered, capped 1320px, px-4 (16px) / lg:px-6 (24px)
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="lbl" style="margin-bottom:6px"><span class="val">width="fluid"</span> · <span class="val">w-full mx-auto px-4 lg:px-6</span> (no max-width)</div>
+    <div style="background:var(--color-muted);padding:8px;border-radius:6px">
+      <div style="background:var(--color-background);border:1px dashed var(--color-border);border-radius:4px;width:100%;padding:0 16px;font:500 12px Inter;line-height:48px">
+        Container width="fluid" — fills parent, only px-4 (16px) / lg:px-6 (24px)
+      </div>
+    </div>
+  </div>
+  <div class="src">Source: 03_Components_v1_1.md §F.17 · container.tsx · ZICR C-4</div>
+</div></div></body></html>

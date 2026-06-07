@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- Source: §E.6 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:320px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:10px">
+  <div class="lbl">Account 2+1 grid · <span class="val">grid-cols-1 xl:grid-cols-3 gap-5 lg:gap-7.5 · ≥1280px</span></div>
+
+  <div style="display:grid;grid-template-columns:2fr 1fr;gap:20px">
+    <!-- Main col-span-2 -->
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="background:var(--color-card);border:1px solid var(--color-border);border-radius:12px;padding:18px;box-shadow:var(--shadow-xs)">
+        <div style="font:600 16px Inter;margin-bottom:8px">Profile</div>
+        <div style="font:400 13px Inter;color:var(--color-muted-foreground);line-height:1.5">Main content lives in <span class="val">col-span-2</span>. Forms, lists, detail panels.</div>
+      </div>
+      <div style="background:var(--color-card);border:1px solid var(--color-border);border-radius:12px;padding:18px;box-shadow:var(--shadow-xs);min-height:80px">
+        <div style="font:600 16px Inter;margin-bottom:8px">Connected accounts</div>
+      </div>
+    </div>
+
+    <!-- Sidebar col-span-1 -->
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="background:var(--color-card);border:1px solid var(--color-border);border-radius:12px;padding:18px;box-shadow:var(--shadow-xs)">
+        <div style="font:600 16px Inter;margin-bottom:8px">Plan</div>
+        <div style="font:400 13px Inter;color:var(--color-muted-foreground)">Sidebar context.</div>
+      </div>
+      <div style="background:var(--color-card);border:1px solid var(--color-border);border-radius:12px;padding:18px;box-shadow:var(--shadow-xs);min-height:80px">
+        <div style="font:600 16px Inter">Activity</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="val" style="margin-top:6px">Stacks to 1 column below xl (1280px). Use lg:gap-7.5 (30px) above lg breakpoint.</div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §E.6 · grid-cols-1 xl:grid-cols-3 · col-span-2 + col-span-1 · gap-5 lg:gap-7.5</div></div></body></html>

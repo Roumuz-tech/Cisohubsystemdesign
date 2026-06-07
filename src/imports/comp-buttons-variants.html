@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+  .card{padding:20px;box-sizing:border-box;width:700px;min-height:130px;}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+  .lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+  .val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+  /* btn base */
+  .btn{display:inline-flex;align-items:center;gap:6px;font-family:Inter;font-weight:500;font-size:13px;border-radius:6px;border:1px solid transparent;cursor:pointer;height:34px;padding:0 12px;box-shadow:0 1px 2px 0 rgba(0,0,0,.05);transition:background .15s;}
+  .btn-primary{background:#3b82f6;color:#fff;}
+  .btn-primary:hover{background:#2563eb;}
+  .btn-mono{background:#09090b;color:#fff;}
+  .btn-destructive{background:#ef4444;color:#fff;}
+  .btn-secondary{background:#f4f4f5;color:#18181b;}
+  .btn-outline{background:#fff;color:#18181b;border:1px solid #e4e4e7;}
+  .btn-outline:hover{background:#f4f4f5;}
+  .btn-dashed{background:#fff;color:#18181b;border:1px dashed #d4d4d8;}
+  .btn-ghost{background:transparent;color:#18181b;box-shadow:none;}
+  .btn-ghost:hover{background:#f4f4f5;}
+  .btn-dim{background:transparent;color:#71717a;box-shadow:none;}
+  .btn-dim:hover{color:#18181b;}
+  .btn-link{background:transparent;color:#3b82f6;box-shadow:none;padding:0;height:auto;border-radius:0;text-decoration:none;}
+  .btn-link:hover{text-decoration:underline;}
+  .btn-lg{height:40px;padding:0 16px;font-size:14px;}
+  .btn-sm{height:28px;padding:0 10px;font-size:12px;}
+  .btn-icon{width:34px;height:34px;padding:0;justify-content:center;}
+  
+</style></head>
+<body><div class="card">
+<div class="row">
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-mono">Mono</button>
+  <button class="btn btn-destructive">Destructive</button>
+  <button class="btn btn-secondary">Secondary</button>
+  <button class="btn btn-outline">Outline</button>
+  <button class="btn btn-dashed">Dashed</button>
+  <button class="btn btn-ghost">Ghost</button>
+  <button class="btn btn-dim">Dim</button>
+  <a class="btn btn-link">Link</a>
+</div>
+<div class="lbl" style="margin-top:14px">9 variants · default size md (h-34) · 13px font · 6px radius · shadow-xs</div>
+</div></body></html>

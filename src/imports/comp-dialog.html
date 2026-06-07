@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:240px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+
+</style></head><body><div class="card">
+<div style="background:rgba(0,0,0,.06);backdrop-filter:blur(2px);padding:30px 60px;border-radius:8px;display:flex;justify-content:center">
+  <div style="background:#fff;border:1px solid #e4e4e7;border-radius:8px;box-shadow:0 10px 15px -3px rgba(0,0,0,.05),0 4px 6px -4px rgba(0,0,0,.05);width:380px">
+    <div style="padding:18px 20px;border-bottom:1px solid #e4e4e7;display:flex;align-items:flex-start;justify-content:space-between">
+      <div>
+        <div style="font:600 15px Inter">Delete evidence file?</div>
+        <div style="font:400 13px/1.5 Inter;color:#71717a;margin-top:4px">This permanently removes the file and detaches it from 3 controls.</div>
+      </div>
+      <button style="background:transparent;border:none;color:#71717a;padding:2px;cursor:pointer;border-radius:4px;margin:-2px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div style="padding:14px 20px;display:flex;justify-content:flex-end;gap:8px">
+      <button style="height:34px;padding:0 14px;border:1px solid #e4e4e7;background:#fff;color:#18181b;font:500 13px Inter;border-radius:6px;cursor:pointer;box-shadow:0 1px 2px 0 rgba(0,0,0,.05)">Cancel</button>
+      <button style="height:34px;padding:0 14px;border:1px solid transparent;background:#ef4444;color:#fff;font:500 13px Inter;border-radius:6px;cursor:pointer;box-shadow:0 1px 2px 0 rgba(0,0,0,.05)">Delete file</button>
+    </div>
+  </div>
+</div>
+<div class="lbl" style="margin-top:10px">Dialog · shadow-lg · destructive uses AlertDialog pattern (RQ-3). Overlay <span class="val">bg-black/30 backdrop-blur(4px)</span>.</div>
+</div></body></html>

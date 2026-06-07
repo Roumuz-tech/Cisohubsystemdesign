@@ -1,0 +1,502 @@
+/* i18n data — loaded into window.I18N_DATA before useI18n.jsx
+   Source: README content guidelines + Arabic-first product spec
+   Updated 2026-05-23 (m0123) — Comply index redesign:
+     - tenant changed Saudi British Bank → Gulf Logistics Co (Hero persona Khalid, COMPLY_BRIEF §Personas)
+     - nav extended: tasks, kanban, complianceOverview, maturity, projects, reports, modules (apm/bcm/advisory), auditTrail
+     - personas R1–R5 with names (RiskDetail copy + 01_PERSONAS.md)
+   Updated 2026-05-23 (m0156) — Dashboard i18n (bundle #1+#2+#3):
+     - +sections dashboard / severity / status / taskDue (full Arabic coverage)
+     - {n}-style interpolation tokens — components use t().replace("{n}", N)              */
+
+window.I18N_DATA = {
+  common: {
+    en: {
+      search: "Search…", notifications: "Notifications",
+      darkMode: "Dark mode", lightMode: "Light mode",
+      profile: "Profile", settings: "Settings",
+      helpSupport: "Help & support", signOut: "Sign out",
+      save: "Save", cancel: "Cancel", close: "Close",
+      export: "Export", addRisk: "Add risk", runAssessment: "Run assessment",
+      seeAll: "See all", filter: "Filter", columns: "Columns",
+      yes: "Yes", no: "No",
+      inDevelopment: "In development",
+      newItem: "New", readDocs: "Read the docs", openInComply: "Open in Comply",
+      comingSoon: "coming soon in this prototype",
+      more: "More"
+    },
+    ar: {
+      search: "بحث…", notifications: "الإشعارات",
+      darkMode: "الوضع الداكن", lightMode: "الوضع الفاتح",
+      profile: "الملف الشخصي", settings: "الإعدادات",
+      helpSupport: "المساعدة والدعم", signOut: "تَسجيل الخروج",
+      save: "حفظ", cancel: "إلغاء", close: "إغلاق",
+      export: "تَصدير", addRisk: "إضافة مخاطرة", runAssessment: "تَشغيل التَقييم",
+      seeAll: "عرض الكل", filter: "تَصفية", columns: "الأعمدة",
+      yes: "نعم", no: "لا",
+      inDevelopment: "قيد التَطوير",
+      newItem: "جديد", readDocs: "اقرأ التَوثيق", openInComply: "فتح في Comply",
+      comingSoon: "ستَتوفّر قريباً في هذا الـ prototype",
+      more: "المزيد"
+    }
+  },
+  nav: {
+    en: {
+      dashboards: "Dashboards", compliance: "Compliance",
+      risk: "Risk", projectsAndReports: "Projects & Reports",
+      modules: "Modules", manage: "Manage",
+      dashboard: "Dashboard", tasks: "Tasks", kanban: "Kanban board",
+      complianceOverview: "Compliance overview",
+      frameworks: "Frameworks", policies: "Policies",
+      evidence: "Evidence", maturity: "Maturity",
+      auditHistory: "Audit history", auditTrail: "Audit Trail",
+      risks: "Risks", assessments: "Assessments",
+      projects: "Projects", reports: "Reports",
+      apm: "APM — Privacy", bcm: "BCM — Continuity", advisory: "Advisory",
+      team: "Team", settings: "Settings"
+    },
+    ar: {
+      dashboards: "لوحات التَحكم", compliance: "الامتثال",
+      risk: "المخاطر", projectsAndReports: "المشاريع والتَقارير",
+      modules: "Modules داخلية", manage: "الإدارة",
+      dashboard: "لوحة التَحكم", tasks: "المهام", kanban: "لوحة Kanban",
+      complianceOverview: "نظرة عامة على الامتثال",
+      frameworks: "أُطر العمل", policies: "السياسات",
+      evidence: "الأدلة", maturity: "النضج",
+      auditHistory: "سجل النشاط", auditTrail: "سجل التَدقيق",
+      risks: "المخاطر", assessments: "التَقييمات",
+      projects: "المشاريع", reports: "التَقارير",
+      apm: "APM — الخصوصية", bcm: "BCM — استمرارية الأعمال", advisory: "الاستشارات",
+      team: "الفريق", settings: "الإعدادات"
+    }
+  },
+  tenant: {
+    en: {
+      name: "Gulf Logistics Co.",
+      subtitle: "Tenant · admin",
+      initials: "GL",
+      sector: "Logistics · +3,000 employees"
+    },
+    ar: {
+      name: "شركة الخليج للوجستيات",
+      subtitle: "العميل · مسؤول",
+      initials: "GL",
+      sector: "لوجستيات · +3,000 موظف"
+    }
+  },
+  persona: {
+    en: {
+      sectionTitle: "Persona (SoD)",
+      r1Name: "Khalid Al-Mutairi",  r1Role: "CISO",
+      r2Name: "Sara Al-Zahrani",    r2Role: "GRC Analyst",
+      r3Name: "Salem Al-Otaibi",    r3Role: "Authority (CEO)",
+      r4Name: "Ahmed Al-Mansour",   r4Role: "External Auditor",
+      r5Name: "Fahad Al-Qahtani",   r5Role: "System Admin"
+    },
+    ar: {
+      sectionTitle: "الشخصية (SoD)",
+      r1Name: "م. خالد المطيري",   r1Role: "رئيس أمن المعلومات",
+      r2Name: "سارة الزهراني",      r2Role: "محلل GRC",
+      r3Name: "سالم العتيبي",       r3Role: "السلطة (الرئيس التَنفيذي)",
+      r4Name: "أحمد المنصور",       r4Role: "مُدقّق خارجي",
+      r5Name: "فهد القحطاني",       r5Role: "مسؤول النظام"
+    }
+  },
+  // Dashboard-specific labels (used by Dashboard.jsx + StatCard shared primitive)
+  dashboard: {
+    en: {
+      complianceByFramework: "Compliance by framework",
+      recentActivity: "Recent activity",
+      upcomingTasks: "Upcoming tasks",
+      topRisks: "Top risks",
+      last30d: "Last 30d",
+      allTeams: "All teams",
+      vsLast30d: "vs last 30d",
+      controlsRemaining: "{n} controls remaining",
+      awaitingEvidence: "Awaiting evidence",
+      scopingInProgress: "Scoping in progress",
+      // Activity verbs (subject is the user name, object follows)
+      actUploadedFor: "uploaded evidence for",
+      actAutoDetected: "Risk auto-detected:",
+      actApprovedPolicy: "approved policy",
+      actCommented: "commented on",
+      actAddedFramework: "added framework",
+      // Relative time labels
+      minAgo: "{n}m ago",
+      hourAgo: "1h ago",
+      hoursAgo: "{n}h ago",
+      yesterday: "yesterday",
+      // Activity entity labels (referenced by id, not auto-generated)
+      activityRiskMongo: "Unpatched MongoDB exposed",
+      activityEngagementQ2: "Engagement Q2-2026",
+      activityPolicyAccess: "Access control v3.2",
+      activityFrameworkISO: "ISO 27017",
+      activityControlECC342: "NCA ECC §3.4.2",
+      // Task names (top 4 upcoming)
+      taskRenewSoc: "Renew SOC 2 attestation",
+      taskMapIso: "Map ISO 27001 §A.5 → policies",
+      taskAccessReview: "Quarterly access review",
+      taskPatchCve: "Patch CVE-2026-1234 on prod",
+      // Top risks labels (top 4 by severity)
+      riskMongo: "Unpatched MongoDB exposed to internet",
+      riskStaleAccounts: "Stale privileged accounts (5)",
+      riskNoDpa: "Vendor without DPA — DataCorp",
+      riskBackupKey: "Backup encryption key rotation overdue"
+    },
+    ar: {
+      complianceByFramework: "الامتثال حسب الإطار",
+      recentActivity: "النشاط الأخير",
+      upcomingTasks: "المهام القادمة",
+      topRisks: "أبرز المخاطر",
+      last30d: "آخر 30 يوماً",
+      allTeams: "كل الفِرَق",
+      vsLast30d: "مقارنة بآخر 30 يوماً",
+      controlsRemaining: "{n} ضابطاً متبقّياً",
+      awaitingEvidence: "بانتظار الأدلة",
+      scopingInProgress: "تَحديد النَطاق قيد التَنفيذ",
+      actUploadedFor: "رَفعَت دليلاً لـ",
+      actAutoDetected: "اكتُشفت مخاطرة:",
+      actApprovedPolicy: "اعتَمد سياسة",
+      actCommented: "علّق على",
+      actAddedFramework: "أضاف إطار",
+      minAgo: "قبل {n} دقيقة",
+      hourAgo: "قبل ساعة",
+      hoursAgo: "قبل {n} ساعات",
+      yesterday: "أمس",
+      activityRiskMongo: "خادم MongoDB غير مُحدَّث",
+      activityEngagementQ2: "ارتباط الربع الثاني 2026",
+      activityPolicyAccess: "التَحكّم بالوصول الإصدار 3.2",
+      activityFrameworkISO: "ISO 27017",
+      activityControlECC342: "ECC §3.4.2",
+      taskRenewSoc: "تَجديد شهادة SOC 2",
+      taskMapIso: "ربط ISO 27001 §A.5 بالسياسات",
+      taskAccessReview: "مراجعة الوصول الربعية",
+      taskPatchCve: "تَرقيع CVE-2026-1234 على الإنتاج",
+      riskMongo: "خادم MongoDB غير مُحدَّث ومكشوف على الإنترنت",
+      riskStaleAccounts: "حسابات صلاحيات مهجورة (5)",
+      riskNoDpa: "مُورّد بدون اتفاقية معالجة — DataCorp",
+      riskBackupKey: "تَدوير مفتاح تَشفير النَسخ الاحتياطية متَأخّر"
+    }
+  },
+  severity: {
+    en: { critical: "Critical", high: "High", medium: "Medium", low: "Low" },
+    ar: { critical: "حرج",      high: "مرتفع", medium: "متوسط", low: "منخفض" }
+  },
+  status: {
+    en: { open: "Open",    mitigating: "Mitigating",      accepted: "Accepted", closed: "Closed" },
+    ar: { open: "مفتوح",   mitigating: "قيد المعالجة",   accepted: "مَقبول",   closed: "مُغلَق" }
+  },
+  taskDue: {
+    en: { tomorrow: "Tomorrow", inDays: "in {n} days",     overdue: "Overdue" },
+    ar: { tomorrow: "غداً",     inDays: "خلال {n} أيام",   overdue: "متَأخّر" }
+  },
+  // ─── Placeholder body copy (used by Placeholder.jsx) ───
+  placeholder: {
+    en: {
+      bodyText: "This screen exists in the production Comply app. In this UI-kit walkthrough, only Dashboard, Frameworks and Risks are wired up.",
+      titleSuffix: " — coming soon in this prototype"
+    },
+    ar: {
+      bodyText: "هذه الشاشة مَوجودة في تطبيق Comply الإنتاجي. في هذا الـ UI-kit، فقط لوحة التَحكم وأُطر العمل والمخاطر مَوصولة.",
+      titleSuffix: " — ستَتوفّر قريباً في هذا الـ prototype"
+    }
+  },
+  // ─── Audit Trail dedicated screen (frozen — 7 PO decisions pending) ───
+  // Source: 02_HARD_CONSTRAINTS C-SEC-2 (append-only, 7-year, SHA-256) +
+  //         03_COMPLIANCE_CONTEXT §Audit Trail Gap (7/7 questions pending, SAMA gating)
+  audit: {
+    en: {
+      title: "Audit Trail",
+      subtitle: "Frozen — awaiting PO sign-off on 7 architectural decisions",
+      alertTitle: "Why is this screen frozen?",
+      alertBody: "Audit Trail is a gating requirement for SAMA-regulated tenants. 7 architectural questions await PO decisions before design can start. Designing screens prematurely risks rework once the architecture lands.",
+      regulatoryRisk: "Regulatory risk if shipped without sign-off",
+      regulatoryRiskValue: "5/5 (gating for SAMA tenants)",
+      retentionLabel: "Retention",
+      retentionValue: "7 years (per NCA ECC + SAMA CSF)",
+      integrityLabel: "Integrity",
+      integrityValue: "Append-only · SHA-256 chain · 100% coverage target",
+      decisionsTitle: "7 decisions pending PO sign-off",
+      decisionsLead: "Each block represents a decision area — exact question phrasing is PO's to set.",
+      d1Title: "Storage architecture",
+      d1Body: "Co-located with tenant DB (Oracle VPD policy) vs separate compliance DB cluster?",
+      d2Title: "Append-only enforcement",
+      d2Body: "DB-level (CHECK + trigger) vs app-layer (immutable repository pattern)?",
+      d3Title: "Cryptographic chain",
+      d3Body: "Per-row SHA-256 vs Merkle tree of batches? Re-hash cost vs verification cost trade-off.",
+      d4Title: "Retention & archival",
+      d4Body: "In-place compression at year-2+ vs cold storage tier (KSA-resident equivalent)?",
+      d5Title: "Search & filter",
+      d5Body: "Full-text index on JSON payload vs typed columns? Auditors need user/entity/date/action filters.",
+      d6Title: "Export formats",
+      d6Body: "CSV + JSON minimum. PDF with checksum manifest for legal hand-off — required?",
+      d7Title: "Regulator access (REGULATOR_VIEWER)",
+      d7Body: "On-demand approval workflow vs always-on read access scoped to tenant?",
+      pathForwardTitle: "Path forward",
+      pathForwardBody: "PO call → 7 decisions captured as ADR-018x · architecture confirmed · designs unlock · build wave 2."
+    },
+    ar: {
+      title: "سجل التَدقيق",
+      subtitle: "مُجَمَّد — بانتظار حسم PO على 7 قرارات معمارية",
+      alertTitle: "لماذا هذه الشاشة مُجَمَّدة؟",
+      alertBody: "سجل التَدقيق متَطلَّب gating لعملاء SAMA. 7 أسئلة معمارية تَنتظر قرارات PO قبل بدء التَصميم. تَصميم الشاشات قبل ذلك يَخلق إعادة عمل عند استقرار المعمارية.",
+      regulatoryRisk: "المخاطرة التَنظيمية لو شُحن بدون اعتماد",
+      regulatoryRiskValue: "5/5 (شَرط دخول لـ SAMA)",
+      retentionLabel: "الاحتفاظ",
+      retentionValue: "7 سنوات (وفق NCA ECC + SAMA CSF)",
+      integrityLabel: "السلامة",
+      integrityValue: "Append-Only · سلسلة SHA-256 · هدف 100% تَغطية",
+      decisionsTitle: "7 قرارات تَنتظر حسم PO",
+      decisionsLead: "كل بطاقة تُمَثّل مجال قرار — صياغة السؤال الدقيقة من اختصاص PO.",
+      d1Title: "معمارية التَخزين",
+      d1Body: "مع DB العميل (Oracle VPD) أم كلستر امتثال منفصل؟",
+      d2Title: "فَرض Append-Only",
+      d2Body: "على مستوى DB (CHECK + trigger) أم على مستوى التطبيق (immutable repository)؟",
+      d3Title: "السلسلة التَشفيرية",
+      d3Body: "SHA-256 لكل صف أم Merkle tree للدُفعات؟ تَوازن تَكلفة الـ re-hash مقابل التَحقّق.",
+      d4Title: "الاحتفاظ والأرشفة",
+      d4Body: "ضغط in-place بعد سنتين أم cold storage (مُكافئ سعودي)؟",
+      d5Title: "البحث والتَصفية",
+      d5Body: "Full-text index على JSON أم أعمدة مُصنَّفة؟ المُدقّقون يَحتاجون فلترة user/entity/date/action.",
+      d6Title: "تَنسيقات التَصدير",
+      d6Body: "CSV + JSON كحدّ أدنى. PDF مع manifest checksums للتَسليم القانوني — مَطلوب؟",
+      d7Title: "وصول المُنظّم (REGULATOR_VIEWER)",
+      d7Body: "موافقة عند الطلب أم وصول قراءة دائم بنطاق tenant؟",
+      pathForwardTitle: "خطوات المضيّ قُدُماً",
+      pathForwardBody: "اجتماع PO ← 7 قرارات تُوثَّق كـ ADR-018x ← تَأكيد المعمارية ← فَتح التَصميم ← بناء الموجة 2."
+    }
+  },
+  // ─── Today's priorities (Dashboard top panel) — persona-aware ───
+  // Source: 01_PERSONAS §Hero (Khalid asks "where am I? what do I do today?") +
+  //         01_PERSONAS §SoD Golden Rules (R1 prepares, R3 approves, R4 reads only)
+  today: {
+    en: {
+      title: "Today",
+      subtitleR1: "Your next 3 actions as CISO",
+      subtitleR2: "Your next 3 actions as GRC Analyst",
+      subtitleR3: "Awaiting your decision",
+      subtitleR4: "Since your last visit (read-only)",
+      subtitleR5: "System health · admin actions",
+      // R1 — CISO prepares
+      r1_1_label: "Critical · overdue 2 days",
+      r1_1_title: "Mitigate RSK-0184 — Unpatched MongoDB exposed",
+      r1_1_meta: "Mitigation deadline · 2 days overdue",
+      r1_2_label: "Due tomorrow",
+      r1_2_title: "Renew SOC 2 attestation",
+      r1_2_meta: "SOC 2 attestation expires in 14 days",
+      r1_3_label: "Prep for Authority sign-off",
+      r1_3_title: "Map ISO 27001 §A.5 → policies",
+      r1_3_meta: "ISO 27001 §A.5 · 12 policies to map",
+      // R2 — Analyst assists
+      r2_1_label: "Assigned to you",
+      r2_1_title: "Upload evidence for ECC §3.4.2",
+      r2_1_meta: "Assigned by CISO · 3 days ago",
+      r2_2_label: "Awaiting CISO review",
+      r2_2_title: "Draft control mapping — SAMA 3.1.1",
+      r2_2_meta: "Submitted to CISO · 1 day ago",
+      r2_3_label: "Due in 3 days",
+      r2_3_title: "Quarterly access review",
+      r2_3_meta: "Q2-2026 cycle · 240 accounts in scope",
+      // R3 — Authority approves (SoD-exclusive)
+      r3_1_label: "Risk acceptance · CISO submitted",
+      r3_1_title: "RSK-0184 — Unpatched MongoDB exposed",
+      r3_1_meta: "Submitted by Khalid Al-Mutairi · 2h ago",
+      r3_2_label: "Policy approval · CISO submitted",
+      r3_2_title: "Access Control v3.2",
+      r3_2_meta: "Submitted by Khalid Al-Mutairi · 4h ago",
+      r3_3_label: "SoA sign-off",
+      r3_3_title: "Q4-2026 Statement of Applicability",
+      r3_3_meta: "Board meeting · due in 7 days",
+      // R4 — Auditor read-only
+      r4_1_label: "New since last visit",
+      r4_1_title: "382 evidence files (+18)",
+      r4_1_meta: "Since your last visit · 18 new files",
+      r4_2_label: "New comments",
+      r4_2_title: "Engagement Q2-2026 (4 unread)",
+      r4_2_meta: "4 unread comments · last 24h",
+      r4_3_label: "Export ready",
+      r4_3_title: "Audit package · CSV + JSON",
+      r4_3_meta: "Package ready · 12 MB",
+      // R5 — System admin
+      r5_1_label: "Health · attention",
+      r5_1_title: "Qualys connector last-sync > 24h",
+      r5_1_meta: "Qualys API · last sync 26h ago",
+      r5_2_label: "Pending invitations",
+      r5_2_title: "3 new users awaiting activation",
+      r5_2_meta: "User invitations · sent 7 days ago",
+      r5_3_label: "Integration",
+      r5_3_title: "Smart Import — 2 CSV files unmapped",
+      r5_3_meta: "Smart Import queue · uploaded today",
+      // Generic action labels (reused across personas)
+      actMitigate: "Start mitigation",
+      actOpen: "Open",
+      actPrepare: "Prepare draft",
+      actReview: "Review & approve",
+      actReject: "Reject",
+      actUpload: "Upload",
+      actExport: "Export",
+      actActivate: "Activate"
+    },
+    ar: {
+      title: "اليوم",
+      subtitleR1: "إجراءاتك الـ 3 القادمة كـ CISO",
+      subtitleR2: "إجراءاتك الـ 3 القادمة كمحلل GRC",
+      subtitleR3: "بانتظار قرارك",
+      subtitleR4: "منذ آخر زيارة (قراءة فقط)",
+      subtitleR5: "صحة النظام · إجراءات إدارية",
+      r1_1_label: "حرج · متَأخّر يومان",
+      r1_1_title: "معالجة RSK-0184 — خادم MongoDB مكشوف",
+      r1_1_meta: "موعد المعالجة · متَأخّر يومان",
+      r1_2_label: "مستَحَقّ غداً",
+      r1_2_title: "تَجديد شهادة SOC 2",
+      r1_2_meta: "تنتهي شهادة SOC 2 خلال 14 يوماً",
+      r1_3_label: "تَجهيز لاعتماد Authority",
+      r1_3_title: "ربط ISO 27001 §A.5 بالسياسات",
+      r1_3_meta: "ISO 27001 §A.5 · 12 سياسة للرَبط",
+      r2_1_label: "مُسنَدة إليك",
+      r2_1_title: "رفع دليل لـ ECC §3.4.2",
+      r2_1_meta: "أَسندها CISO · قبل 3 أيام",
+      r2_2_label: "بانتظار مراجعة CISO",
+      r2_2_title: "مسودة ربط ضوابط — SAMA 3.1.1",
+      r2_2_meta: "أُرسلت لـ CISO · قبل يوم",
+      r2_3_label: "مستَحَقّ خلال 3 أيام",
+      r2_3_title: "مراجعة الوصول الربعية",
+      r2_3_meta: "دورة الربع الثاني 2026 · 240 حساب في النطاق",
+      r3_1_label: "قَبول مخاطرة · CISO أرسل",
+      r3_1_title: "RSK-0184 — خادم MongoDB مكشوف",
+      r3_1_meta: "أرسلها م. خالد المطيري · قبل ساعتين",
+      r3_2_label: "اعتماد سياسة · CISO أرسل",
+      r3_2_title: "التَحكّم بالوصول الإصدار 3.2",
+      r3_2_meta: "أرسلها م. خالد المطيري · قبل 4 ساعات",
+      r3_3_label: "اعتماد بيان التَطبيق",
+      r3_3_title: "بيان التَطبيق للربع الرابع 2026",
+      r3_3_meta: "اجتماع المجلس · مستَحَقّ خلال 7 أيام",
+      r4_1_label: "جديد منذ آخر زيارة",
+      r4_1_title: "382 ملف دليل (+18)",
+      r4_1_meta: "منذ آخر زيارة · 18 ملف جديد",
+      r4_2_label: "تَعليقات جديدة",
+      r4_2_title: "ارتباط الربع الثاني 2026 (4 غير مَقروء)",
+      r4_2_meta: "4 تَعليقات غير مَقروءة · آخر 24 ساعة",
+      r4_3_label: "تَصدير جاهز",
+      r4_3_title: "حِزمة التَدقيق · CSV + JSON",
+      r4_3_meta: "الحِزمة جاهزة · 12 ميجابايت",
+      r5_1_label: "صحّة · يَحتاج انتباه",
+      r5_1_title: "موصّل Qualys آخر مزامنة > 24 ساعة",
+      r5_1_meta: "واجهة Qualys · آخر مزامنة قبل 26 ساعة",
+      r5_2_label: "دَعوات معلَّقة",
+      r5_2_title: "3 مستخدمين جُدد بانتظار التَفعيل",
+      r5_2_meta: "دَعوات المستخدمين · أُرسلت قبل 7 أيام",
+      r5_3_label: "تَكامل",
+      r5_3_title: "Smart Import — ملفان CSV بلا ربط",
+      r5_3_meta: "قائمة Smart Import · رُفعت اليوم",
+      actMitigate: "ابدأ المعالجة",
+      actOpen: "فتح",
+      actPrepare: "جَهّز المسودة",
+      actReview: "راجع واعتمد",
+      actReject: "رَفض",
+      actUpload: "رفع",
+      actExport: "تَصدير",
+      actActivate: "تَفعيل"
+    }
+  },
+  // ─── Compliance Journey strip (Drata-inspired, per 04_INSPIRATION §0.4 + COMPLY_BRIEF "لحظة آها") ───
+  journey: {
+    en: {
+      title: "Compliance journey",
+      subtitle: "You are at station 3 of 6 — initial assessment in progress",
+      ahaTag: "Moment of truth",
+      youAreHere: "You are here",
+      s1: "Tenant setup",
+      s2: "Framework selection",
+      s3: "Initial assessment",
+      s4: "Moment of truth",
+      s5: "Remediation",
+      s6: "Audit-ready"
+    },
+    ar: {
+      title: "رحلة الامتثال",
+      subtitle: "أنت في المحطة 3 من 6 — التَقييم الأول قيد التَنفيذ",
+      ahaTag: "لحظة آها",
+      youAreHere: "أنت هنا",
+      s1: "إعداد العميل",
+      s2: "اختيار الأُطر",
+      s3: "التَقييم الأول",
+      s4: "لحظة آها",
+      s5: "المعالجة",
+      s6: "الاستعداد للتَدقيق"
+    }
+  },
+  comply: {
+    en: {
+      dashboardTitle: "Compliance dashboard",
+      dashboardDesc: "Gulf Logistics Co. · NCA ECC, SAMA, ISO 27001, PDPL · last sync 12 min ago",
+      complianceScore: "Compliance score",
+      frameworksLinked: "Frameworks linked",
+      openRisks: "Open risks",
+      evidenceFiles: "Evidence files",
+      complianceByFramework: "Compliance by framework",
+      recentActivity: "Recent activity",
+      upcomingTasks: "Upcoming tasks",
+      topRisks: "Top risks",
+      risksTitle: "Risks",
+      risksDesc: "28 risks in the register · 24 open · 4 critical · 9 high · 11 medium · 4 low",
+      frameworksTitle: "Frameworks",
+      frameworksDesc: "4 frameworks active · 332 of 493 controls mapped",
+      tasksTitle: "Tasks",
+      tasksDesc: "8 open · 3 overdue · 12 due this week — 40% of CISO's day",
+      kanbanTitle: "Kanban board",
+      kanbanDesc: "Visual task flow across 5 states (Planned → Active → Done → Reported → Archived)",
+      complianceTitle: "Compliance overview",
+      complianceDesc: "4 frameworks linked · 332 of 493 controls mapped · last assessment 14 days ago",
+      maturityTitle: "Maturity",
+      maturityDesc: "5-level maturity model (Initial → Optimizing) · current avg = 2.8",
+      projectsTitle: "Projects",
+      projectsDesc: "12 active projects · 3 linked to the ECC roadmap",
+      reportsTitle: "Reports",
+      reportsDesc: "4 official templates (MVC, CRFR, Annex 3, SAMA form) · Board Reports as PPT export",
+      apmTitle: "APM — Privacy Management",
+      apmDesc: "Acceptable Privacy Management module · lives inside Comply codebase",
+      bcmTitle: "BCM — Business Continuity",
+      bcmDesc: "BIA + RTO/RPO + Recovery Plans · module inside Comply codebase",
+      advisoryTitle: "Advisory",
+      advisoryDesc: "Two-way interaction with vCISO consultants in Command via Hub API",
+      auditTrailTitle: "Audit Trail",
+      auditTrailDesc: "Immediate audit log · 7-year retention · append-only · SHA-256 · gating for SAMA tenants — 7/7 architectural questions pending PO"
+    },
+    ar: {
+      dashboardTitle: "لوحة الامتثال",
+      dashboardDesc: "شركة الخليج للوجستيات · ECC، ساما، ISO 27001، PDPL · آخر مزامنة قبل 12 دقيقة",
+      complianceScore: "نسبة الامتثال",
+      frameworksLinked: "أُطر العمل المرتبطة",
+      openRisks: "مخاطر مفتوحة",
+      evidenceFiles: "ملفات الأدلة",
+      complianceByFramework: "الامتثال حسب الإطار",
+      recentActivity: "النشاط الأخير",
+      upcomingTasks: "المهام القادمة",
+      topRisks: "أبرز المخاطر",
+      risksTitle: "المخاطر",
+      risksDesc: "28 مخاطرة في السجل · 24 مفتوحة · 4 حرجة · 9 مرتفعة · 11 متوسطة · 4 منخفضة",
+      frameworksTitle: "أُطر العمل",
+      frameworksDesc: "4 أُطر نشطة · 332 ضابطاً مرتبطاً من 493",
+      tasksTitle: "المهام",
+      tasksDesc: "8 مفتوحة · 3 متَأخّرة · 12 مستَحَقّة هذا الأسبوع — 40% من يوم CISO",
+      kanbanTitle: "لوحة Kanban",
+      kanbanDesc: "تَدفّق المهام بصرياً عبر 5 حالات (مُخطَّط → نَشط → مُكتَمل → مُبلَّغ → مُؤرشَف)",
+      complianceTitle: "نظرة عامة على الامتثال",
+      complianceDesc: "4 أُطر مرتبطة · 332 ضابطاً من 493 · آخر تَقييم قبل 14 يوماً",
+      maturityTitle: "النضج",
+      maturityDesc: "نَموذج نضج بـ 5 مستويات (Initial → Optimizing) · المتَوسّط الحالي = 2.8",
+      projectsTitle: "المشاريع",
+      projectsDesc: "12 مشروعاً نَشطاً · 3 مَربوطة بـ roadmap ECC",
+      reportsTitle: "التَقارير",
+      reportsDesc: "4 قوالب رسمية (MVC، CRFR، Annex 3، SAMA form) · تَقارير المجلس بصيغة PowerPoint",
+      apmTitle: "APM — إدارة الخصوصية",
+      apmDesc: "Module إدارة سياسات الخصوصية · يَعيش داخل codebase Comply",
+      bcmTitle: "BCM — استمرارية الأعمال",
+      bcmDesc: "BIA + RTO/RPO + خطط التَعافي · Module داخل codebase Comply",
+      advisoryTitle: "الاستشارات",
+      advisoryDesc: "تَفاعل ثنائي مع مستشاري vCISO في Command عبر Hub API",
+      auditTrailTitle: "سجل التَدقيق",
+      auditTrailDesc: "سجل تَدقيق فوري · 7 سنوات احتفاظ · Append-Only · SHA-256 · شَرط دخول لعملاء SAMA — 7/7 أسئلة معمارية تَنتظر حسم PO"
+    }
+  }
+};

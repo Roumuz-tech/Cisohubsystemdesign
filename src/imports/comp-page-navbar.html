@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- Source: §E.6.3 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:230px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:10px">
+  <div class="lbl">PageNavbar (sub-nav under page Toolbar) · <span class="val">line variant</span></div>
+
+  <div style="display:flex;align-items:center;gap:0;border-bottom:1px solid var(--color-border);overflow-x:auto">
+    <a style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font:500 14px Inter;color:var(--color-primary);border-bottom:2px solid var(--color-primary);margin-bottom:-1px;cursor:pointer">
+      Overview
+    </a>
+    <a style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">
+      Notifications
+    </a>
+    <a style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">
+      Integrations
+    </a>
+    <a style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">
+      Account
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+    <a style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">
+      Security
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+    <a style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">
+      Billing
+    </a>
+    <a style="display:inline-flex;align-items:center;gap:6px;padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">
+      More
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </div>
+
+  <div class="val" style="margin-top:6px">Active: <span style="color:var(--color-primary)">text-primary</span> + border-b-2 border-primary · chevron ▾ → dropdown trigger (F-051) · "More ▾" → overflow (F-052) · not sticky</div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §E.6.3 · page-navbar.tsx · line variant · F-051 dropdown triggers · F-052 More overflow</div></div></body></html>

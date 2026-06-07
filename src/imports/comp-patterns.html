@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- Source: §I.1 + §I.2 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:380px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:18px">
+  <div>
+    <div class="lbl" style="margin-bottom:8px">Toggle Settings List · <span class="val">§I.1 F-009</span></div>
+    <div style="border:1px solid var(--color-border);border-radius:12px;background:var(--color-card)">
+      
+        <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--color-border)">
+          <div style="flex:1">
+            <div style="font:500 14px Inter">Email notifications</div>
+            <div style="font:400 12px Inter;color:var(--color-muted-foreground);margin-top:2px">Weekly digest + critical alerts</div>
+          </div>
+          <span style="display:inline-block;width:40px;height:24px;background:var(--color-primary);border-radius:999px;position:relative;cursor:pointer">
+            <span style="position:absolute;top:2px;inset-inline-start:18px;width:20px;height:20px;background:var(--color-primary-foreground);border-radius:50%"></span>
+          </span>
+        </div>
+      
+        <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--color-border)">
+          <div style="flex:1">
+            <div style="font:500 14px Inter">Two-factor authentication</div>
+            <div style="font:400 12px Inter;color:var(--color-muted-foreground);margin-top:2px">Required on every sign-in</div>
+          </div>
+          <span style="display:inline-block;width:40px;height:24px;background:var(--color-primary);border-radius:999px;position:relative;cursor:pointer">
+            <span style="position:absolute;top:2px;inset-inline-start:18px;width:20px;height:20px;background:var(--color-primary-foreground);border-radius:50%"></span>
+          </span>
+        </div>
+      
+        <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid var(--color-border)">
+          <div style="flex:1">
+            <div style="font:500 14px Inter">Auto-archive resolved risks</div>
+            <div style="font:400 12px Inter;color:var(--color-muted-foreground);margin-top:2px">After 90 days</div>
+          </div>
+          <span style="display:inline-block;width:40px;height:24px;background:var(--color-zinc-300);border-radius:999px;position:relative;cursor:pointer">
+            <span style="position:absolute;top:2px;inset-inline-start:2px;width:20px;height:20px;background:var(--color-primary-foreground);border-radius:50%"></span>
+          </span>
+        </div>
+      
+        <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;">
+          <div style="flex:1">
+            <div style="font:500 14px Inter">Share telemetry with vendor</div>
+            <div style="font:400 12px Inter;color:var(--color-muted-foreground);margin-top:2px">Anonymous usage data</div>
+          </div>
+          <span style="display:inline-block;width:40px;height:24px;background:var(--color-zinc-300);border-radius:999px;position:relative;cursor:pointer">
+            <span style="position:absolute;top:2px;inset-inline-start:2px;width:20px;height:20px;background:var(--color-primary-foreground);border-radius:50%"></span>
+          </span>
+        </div>
+      
+    </div>
+  </div>
+
+  <div>
+    <div class="lbl" style="margin-bottom:8px">KPI Stat Row (horizontal separators) · <span class="val">§I.2 F-053</span></div>
+    <div style="display:flex;background:var(--color-card);border:1px solid var(--color-border);border-radius:12px;padding:18px 20px">
+      
+        <div style="flex:1;padding:0 16px;border-inline-end:1px solid var(--color-border)">
+          <div style="font:700 26px/1.1 Inter;letter-spacing:-.02em">86%</div>
+          <div style="font:400 13px Inter;color:var(--color-muted-foreground);margin-top:4px">Compliance score</div>
+        </div>
+      
+        <div style="flex:1;padding:0 16px;border-inline-end:1px solid var(--color-border)">
+          <div style="font:700 26px/1.1 Inter;letter-spacing:-.02em">24</div>
+          <div style="font:400 13px Inter;color:var(--color-muted-foreground);margin-top:4px">Open risks</div>
+        </div>
+      
+        <div style="flex:1;padding:0 16px;border-inline-end:1px solid var(--color-border)">
+          <div style="font:700 26px/1.1 Inter;letter-spacing:-.02em">382</div>
+          <div style="font:400 13px Inter;color:var(--color-muted-foreground);margin-top:4px">Evidence files</div>
+        </div>
+      
+        <div style="flex:1;padding:0 16px;">
+          <div style="font:700 26px/1.1 Inter;letter-spacing:-.02em">9</div>
+          <div style="font:400 13px Inter;color:var(--color-muted-foreground);margin-top:4px">Frameworks</div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §I.1 F-009 (Toggle Settings List) + §I.2 F-053 (KPI Stat Row horizontal)</div></div></body></html>

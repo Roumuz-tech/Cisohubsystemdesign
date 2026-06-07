@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- Source: §F.15 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:240px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+
+</style></head><body><div class="card">
+<div style="display:flex;gap:18px;align-items:flex-start">
+  <div style="position:relative;width:300px;height:180px;border:1px solid var(--color-border);border-radius:8px;overflow:hidden">
+    <div style="height:100%;width:100%;padding:14px 16px;overflow-y:auto;font:400 13px/1.6 Inter">
+      <div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1001</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1002</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1003</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1004</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1005</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1006</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1007</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1008</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1009</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1010</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1011</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1012</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1013</div><div style="padding:4px 0;border-bottom:1px solid var(--color-border)">Risk item #1014</div>
+    </div>
+    <div style="position:absolute;inset-block:6px;inset-inline-end:4px;width:10px;display:flex;padding:1px">
+      <div style="flex:1;border-radius:999px;background:var(--color-border);height:42%;align-self:flex-start"></div>
+    </div>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;gap:6px">
+    <div class="lbl">ScrollArea anatomy</div>
+    <div class="val">Root: relative overflow-hidden</div>
+    <div class="val">Bar v: w-2.5 (10px)</div>
+    <div class="val">Bar h: h-2.5 (10px)</div>
+    <div class="val">Thumb: bg-border rounded-full</div>
+    <div class="lbl" style="margin-top:8px">Bar appears only on hover.</div>
+  </div>
+</div>
+<div style="margin-top:14px;border:1px solid var(--color-border);border-radius:8px;padding:14px 0 12px">
+  <div style="overflow-x:auto;display:flex;gap:10px;padding:0 14px 6px;font:500 12px Inter;white-space:nowrap">
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0001</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0002</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0003</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0004</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0005</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0006</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0007</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0008</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0009</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0010</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0011</span>
+    <span style="padding:6px 10px;background:var(--color-muted);border-radius:6px">RSK-0012</span>
+  </div>
+  <div style="margin:8px 14px 0;height:10px;display:flex;padding:1px;border-top:1px solid transparent">
+    <div style="width:40%;border-radius:999px;background:var(--color-border);height:6px;align-self:center"></div>
+  </div>
+  <div class="lbl" style="padding:0 14px;margin-top:4px">Horizontal · <span class="val">h-2.5 (10px) · border-t border-t-transparent · p-[1px]</span></div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §F.15 · scroll-area.tsx</div></div></body></html>

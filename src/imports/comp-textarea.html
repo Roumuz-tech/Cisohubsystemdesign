@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- Source: §B.4 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:440px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:14px;max-width:520px">
+  <div>
+    <label style="font:500 14px Inter;display:block;margin-bottom:6px">Description</label>
+    <textarea placeholder="Describe the risk scenario..." style="width:100%;min-height:80px;padding:8px 12px;border:1px solid var(--color-border);border-radius:6px;font:400 13px/1.5 Inter;background:var(--color-background);color:var(--color-foreground);box-shadow:var(--shadow-xs);outline:none;resize:vertical;font-family:inherit"></textarea>
+  </div>
+
+  <div>
+    <label style="font:500 14px Inter;display:block;margin-bottom:6px">Filled state</label>
+    <textarea style="width:100%;min-height:80px;padding:8px 12px;border:1px solid var(--color-border);border-radius:6px;font:400 13px/1.5 Inter;background:var(--color-background);color:var(--color-foreground);box-shadow:var(--shadow-xs);outline:none;resize:vertical;font-family:inherit">Unpatched MongoDB exposed to internet. Discovered 2026-04-12 during external scan. Affects production tenant SB-001.</textarea>
+  </div>
+
+  <div style="display:flex;gap:14px">
+    <div style="flex:1">
+      <label style="font:500 14px Inter;display:block;margin-bottom:6px;color:var(--color-destructive)">Error state</label>
+      <textarea style="width:100%;min-height:64px;padding:8px 12px;border:1px solid color-mix(in srgb, var(--color-destructive) 60%, transparent);border-radius:6px;font:400 13px/1.5 Inter;background:var(--color-background);color:var(--color-foreground);box-shadow:0 0 0 3px color-mix(in srgb, var(--color-destructive) 10%, transparent);outline:none;resize:vertical;font-family:inherit">Too short</textarea>
+      <div style="font:500 12px Inter;color:var(--color-destructive);margin-top:4px">Must be at least 20 characters</div>
+    </div>
+    <div style="flex:1">
+      <label style="font:500 14px Inter;display:block;margin-bottom:6px">Disabled</label>
+      <textarea disabled style="width:100%;min-height:64px;padding:8px 12px;border:1px solid var(--color-border);border-radius:6px;font:400 13px/1.5 Inter;background:color-mix(in srgb, var(--color-muted) 80%, transparent);color:var(--color-foreground);box-shadow:var(--shadow-xs);outline:none;resize:none;font-family:inherit;cursor:not-allowed;opacity:.6">Locked content</textarea>
+    </div>
+  </div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §B.4 · input.tsx (textarea inherits) · px-3 text-[0.8125rem] · ring-ring/30 ring-[3px]</div></div></body></html>

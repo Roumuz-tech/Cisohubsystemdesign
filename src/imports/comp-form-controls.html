@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+  .card{padding:20px;box-sizing:border-box;width:700px;min-height:200px;}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+  .lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+  .val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+  /* btn base */
+  .btn{display:inline-flex;align-items:center;gap:6px;font-family:Inter;font-weight:500;font-size:13px;border-radius:6px;border:1px solid transparent;cursor:pointer;height:34px;padding:0 12px;box-shadow:0 1px 2px 0 rgba(0,0,0,.05);transition:background .15s;}
+  .btn-primary{background:#3b82f6;color:#fff;}
+  .btn-primary:hover{background:#2563eb;}
+  .btn-mono{background:#09090b;color:#fff;}
+  .btn-destructive{background:#ef4444;color:#fff;}
+  .btn-secondary{background:#f4f4f5;color:#18181b;}
+  .btn-outline{background:#fff;color:#18181b;border:1px solid #e4e4e7;}
+  .btn-outline:hover{background:#f4f4f5;}
+  .btn-dashed{background:#fff;color:#18181b;border:1px dashed #d4d4d8;}
+  .btn-ghost{background:transparent;color:#18181b;box-shadow:none;}
+  .btn-ghost:hover{background:#f4f4f5;}
+  .btn-dim{background:transparent;color:#71717a;box-shadow:none;}
+  .btn-dim:hover{color:#18181b;}
+  .btn-link{background:transparent;color:#3b82f6;box-shadow:none;padding:0;height:auto;border-radius:0;text-decoration:none;}
+  .btn-link:hover{text-decoration:underline;}
+  .btn-lg{height:40px;padding:0 16px;font-size:14px;}
+  .btn-sm{height:28px;padding:0 10px;font-size:12px;}
+  .btn-icon{width:34px;height:34px;padding:0;justify-content:center;}
+  
+</style></head>
+<body><div class="card">
+<div style="display:flex;gap:24px;align-items:flex-start">
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div class="lbl">Checkbox</div>
+    <label style="display:flex;align-items:center;gap:8px;font:400 13px Inter">
+      <input type="checkbox" checked style="accent-color:#3b82f6"> Encrypted at rest
+    </label>
+    <label style="display:flex;align-items:center;gap:8px;font:400 13px Inter">
+      <input type="checkbox" style="accent-color:#3b82f6"> Send daily digest
+    </label>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div class="lbl">Radio</div>
+    <label style="display:flex;align-items:center;gap:8px;font:400 13px Inter">
+      <input type="radio" name="env" checked style="accent-color:#3b82f6"> Production
+    </label>
+    <label style="display:flex;align-items:center;gap:8px;font:400 13px Inter">
+      <input type="radio" name="env" style="accent-color:#3b82f6"> Staging
+    </label>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <div class="lbl">Switch</div>
+    <label style="display:flex;align-items:center;gap:10px;font:400 13px Inter;cursor:pointer">
+      <span style="display:inline-block;width:32px;height:18px;background:#3b82f6;border-radius:999px;position:relative">
+        <span style="position:absolute;top:2px;left:16px;width:14px;height:14px;background:#fff;border-radius:50%"></span>
+      </span> Active users only
+    </label>
+    <label style="display:flex;align-items:center;gap:10px;font:400 13px Inter;cursor:pointer">
+      <span style="display:inline-block;width:32px;height:18px;background:#e4e4e7;border-radius:999px;position:relative">
+        <span style="position:absolute;top:2px;left:2px;width:14px;height:14px;background:#fff;border-radius:50%"></span>
+      </span> Auto-archive
+    </label>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <div class="lbl">Select</div>
+    <div style="display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 10px;border:1px solid #e4e4e7;border-radius:6px;font:400 13px Inter;background:#fff;box-shadow:0 1px 2px 0 rgba(0,0,0,.05);min-width:180px;justify-content:space-between">
+      <span>NCA ECC</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#71717a" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+    </div>
+  </div>
+</div>
+</div></body></html>

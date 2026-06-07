@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+  .card{padding:20px;box-sizing:border-box;width:700px;min-height:170px;}
+  .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .col{display:flex;flex-direction:column;gap:8px;}
+  .swatch{display:flex;flex-direction:column;gap:6px;}
+  .sw{width:80px;height:56px;border-radius:8px;border:1px solid var(--color-border);box-shadow:var(--shadow-xs);}
+  .lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+  .val{font-size:11px;color:var(--color-foreground);font-family:var(--font-mono);}
+  .nm{font-size:12px;color:var(--color-foreground);font-weight:500;}
+  
+</style>
+</head>
+<body>
+<div class="card">
+
+<div class="row" style="gap:14px;align-items:flex-start">
+  
+    <div class="swatch">
+      <div class="sw" style="background:#ffffff"></div>
+      <div class="nm">background</div>
+      <div class="val" style="font-size:10px">--color-background</div>
+      <div class="lbl">Page bg</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#ffffff"></div>
+      <div class="nm">card</div>
+      <div class="val" style="font-size:10px">--color-card</div>
+      <div class="lbl">Card surface</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#f4f4f5"></div>
+      <div class="nm">muted</div>
+      <div class="val" style="font-size:10px">--color-muted</div>
+      <div class="lbl">Subtle bg</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#f4f4f5"></div>
+      <div class="nm">accent</div>
+      <div class="val" style="font-size:10px">--color-accent</div>
+      <div class="lbl">Hover bg</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#e4e4e7"></div>
+      <div class="nm">border</div>
+      <div class="val" style="font-size:10px">--color-border</div>
+      <div class="lbl">Border / divider</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#18181b"></div>
+      <div class="nm">foreground</div>
+      <div class="val" style="font-size:10px">--color-foreground</div>
+      <div class="lbl">Text</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#71717a"></div>
+      <div class="nm">muted-fg</div>
+      <div class="val" style="font-size:10px">--color-muted-foreground</div>
+      <div class="lbl">Secondary text</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

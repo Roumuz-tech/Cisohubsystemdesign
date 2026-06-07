@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Source: §F.6 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:340px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:18px">
+  <div>
+    <div class="lbl" style="margin-bottom:8px">default · <span class="val">bg-accent rounded-lg · active: bg-background shadow-xs</span></div>
+    <div style="display:inline-flex;padding:3px;background:var(--color-accent);border-radius:8px;gap:0">
+      <button style="padding:6px 14px;font:500 14px Inter;color:var(--color-foreground);background:var(--color-background);border:none;border-radius:6px;box-shadow:var(--shadow-xs);cursor:pointer">Overview</button>
+      <button style="padding:6px 14px;font:500 14px Inter;color:var(--color-muted-foreground);background:transparent;border:none;border-radius:6px;cursor:pointer">Activity</button>
+      <button style="padding:6px 14px;font:500 14px Inter;color:var(--color-muted-foreground);background:transparent;border:none;border-radius:6px;cursor:pointer">Reports</button>
+    </div>
+  </div>
+  <div>
+    <div class="lbl" style="margin-bottom:8px">button · <span class="val">trigger border border-transparent · active: border-input bg-background</span></div>
+    <div style="display:inline-flex;gap:6px">
+      <button style="padding:6px 14px;font:500 14px Inter;color:var(--color-foreground);background:var(--color-background);border:1px solid var(--color-border);border-radius:6px;box-shadow:var(--shadow-xs);cursor:pointer">All</button>
+      <button style="padding:6px 14px;font:500 14px Inter;color:var(--color-muted-foreground);background:transparent;border:1px solid transparent;border-radius:6px;cursor:pointer">Open</button>
+      <button style="padding:6px 14px;font:500 14px Inter;color:var(--color-muted-foreground);background:transparent;border:1px solid transparent;border-radius:6px;cursor:pointer">Closed</button>
+    </div>
+  </div>
+  <div>
+    <div class="lbl" style="margin-bottom:8px">line · <span class="val">border-b border-input · active: border-b-2 border-primary</span></div>
+    <div style="display:flex;border-bottom:1px solid var(--color-border)">
+      <div style="padding:10px 14px;font:500 14px Inter;color:var(--color-foreground);border-bottom:2px solid var(--color-primary);margin-bottom:-1px;cursor:pointer">Evidence</div>
+      <div style="padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">Tasks</div>
+      <div style="padding:10px 14px;font:500 14px Inter;color:var(--color-muted-foreground);border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer">Audit history</div>
+    </div>
+  </div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §F.6 · tabs.tsx · default/button/line variants</div></div></body></html>

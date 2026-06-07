@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+  .card{padding:20px;box-sizing:border-box;width:700px;min-height:170px;}
+  .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .col{display:flex;flex-direction:column;gap:8px;}
+  .swatch{display:flex;flex-direction:column;gap:6px;}
+  .sw{width:80px;height:56px;border-radius:8px;border:1px solid var(--color-border);box-shadow:var(--shadow-xs);}
+  .lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+  .val{font-size:11px;color:var(--color-foreground);font-family:var(--font-mono);}
+  .nm{font-size:12px;color:var(--color-foreground);font-weight:500;}
+  
+</style>
+</head>
+<body>
+<div class="card">
+
+<div class="row" style="gap:14px;align-items:flex-start">
+  
+    <div class="swatch">
+      <div class="sw" style="background:#22c55e"></div>
+      <div class="nm">success</div>
+      <div class="val">#22c55e</div>
+      <div class="lbl">green-500 · Paid / Active</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#f59e0b"></div>
+      <div class="nm">warning</div>
+      <div class="val">#f59e0b</div>
+      <div class="lbl">amber-500 · Pending</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#ef4444"></div>
+      <div class="nm">destructive</div>
+      <div class="val">#ef4444</div>
+      <div class="lbl">red-500 · Expired / Error</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#8b5cf6"></div>
+      <div class="nm">info</div>
+      <div class="val">#8b5cf6</div>
+      <div class="lbl">violet-500 · Info notice</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#3b82f6"></div>
+      <div class="nm">primary</div>
+      <div class="val">#3b82f6</div>
+      <div class="lbl">blue-500 · In progress</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#09090b"></div>
+      <div class="nm">mono</div>
+      <div class="val">#09090b</div>
+      <div class="lbl">zinc-950 · Default / mono</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

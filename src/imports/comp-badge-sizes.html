@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Source: §B.3 -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:280px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:14px">
+  <div class="lbl">Badge sizes · <span class="val">xs/sm/md/lg per §B.3</span></div>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <div style="display:flex;gap:14px;align-items:center">
+      <div class="lbl" style="width:60px">xs</div>
+      <span style="display:inline-flex;align-items:center;gap:3px;height:16px;padding:0 6px;border-radius:4px;background:color-mix(in srgb, var(--color-primary) 10%, transparent);color:var(--color-primary);font:500 10px Inter">Beta</span>
+      <span style="display:inline-flex;align-items:center;height:16px;padding:0 6px;border-radius:4px;background:var(--color-primary);color:var(--color-primary-foreground);font:500 10px Inter">NEW</span>
+      <span class="val">h-4 (16px) · text-[0.625rem] (10px)</span>
+    </div>
+    <div style="display:flex;gap:14px;align-items:center">
+      <div class="lbl" style="width:60px">sm</div>
+      <span style="display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:5px;background:color-mix(in srgb, var(--color-success) 10%, transparent);color:color-mix(in srgb, var(--color-success) 60%, black);font:500 11px Inter">Active</span>
+      <span style="display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:5px;background:color-mix(in srgb, var(--color-warning) 12%, transparent);color:color-mix(in srgb, var(--color-warning) 70%, black);font:500 11px Inter">Pending</span>
+      <span class="val">h-5 (20px) · text-[0.6875rem] (11px)</span>
+    </div>
+    <div style="display:flex;gap:14px;align-items:center">
+      <div class="lbl" style="width:60px">md (default)</div>
+      <span style="display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:6px;background:color-mix(in srgb, var(--color-success) 10%, transparent);color:color-mix(in srgb, var(--color-success) 60%, black);font:500 12px Inter">Verified</span>
+      <span style="display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:6px;background:var(--color-primary);color:var(--color-primary-foreground);font:500 12px Inter">Live</span>
+      <span class="val">h-6 (24px) · text-xs (12px)</span>
+    </div>
+    <div style="display:flex;gap:14px;align-items:center">
+      <div class="lbl" style="width:60px">lg</div>
+      <span style="display:inline-flex;align-items:center;height:28px;padding:0 10px;border-radius:6px;background:color-mix(in srgb, var(--color-destructive) 10%, transparent);color:color-mix(in srgb, var(--color-destructive) 65%, black);font:500 12px Inter">Critical</span>
+      <span class="val">h-7 (28px) · text-xs (12px)</span>
+    </div>
+  </div>
+</div>
+<div class="src">Source: 03_Components_v1_1.md §B.3 · badge.tsx · xs h-4 text-[0.625rem] · sm h-5 text-[0.6875rem] · md h-6 text-xs</div></div></body></html>

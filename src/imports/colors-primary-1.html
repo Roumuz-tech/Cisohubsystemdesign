@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+  .card{padding:20px;box-sizing:border-box;width:700px;min-height:170px;}
+  .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .col{display:flex;flex-direction:column;gap:8px;}
+  .swatch{display:flex;flex-direction:column;gap:6px;}
+  .sw{width:80px;height:56px;border-radius:8px;border:1px solid var(--color-border);box-shadow:var(--shadow-xs);}
+  .lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+  .val{font-size:11px;color:var(--color-foreground);font-family:var(--font-mono);}
+  .nm{font-size:12px;color:var(--color-foreground);font-weight:500;}
+  
+</style>
+</head>
+<body>
+<div class="card">
+
+<div class="row" style="gap:14px;align-items:flex-start">
+  
+    <div class="swatch">
+      <div class="sw" style="background:#3b82f6"></div>
+      <div class="nm">blue-500</div>
+      <div class="val">#3b82f6</div>
+      <div class="lbl">Primary · --color-primary</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#2563eb"></div>
+      <div class="nm">blue-600</div>
+      <div class="val">#2563eb</div>
+      <div class="lbl">Primary hover · --color-primary-hover</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#eff6ff"></div>
+      <div class="nm">blue-50</div>
+      <div class="val">#eff6ff</div>
+      <div class="lbl">Tint</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#dbeafe"></div>
+      <div class="nm">blue-100</div>
+      <div class="val">#dbeafe</div>
+      <div class="lbl">Tint</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#1d4ed8"></div>
+      <div class="nm">blue-700</div>
+      <div class="val">#1d4ed8</div>
+      <div class="lbl">Shade</div>
+    </div>
+    <div class="swatch">
+      <div class="sw" style="background:#8b5cf6"></div>
+      <div class="nm">violet-500</div>
+      <div class="val">#8b5cf6</div>
+      <div class="lbl">Info · --color-info</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

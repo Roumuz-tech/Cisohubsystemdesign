@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- Source: Authority RQ-2 + sonner -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+.card{padding:20px;box-sizing:border-box;width:700px;min-height:420px;}
+.lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+.val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+.src{font-size:10px;color:var(--color-muted-foreground);font-family:var(--font-mono);margin-top:10px;border-top:1px dashed var(--color-border);padding-top:6px;}
+</style></head><body><div class="card">
+<div style="display:flex;flex-direction:column;gap:10px;background:var(--color-muted);padding:16px;border-radius:8px;border:1px solid var(--color-border);align-items:flex-end">
+  
+    <div style="width:330px;background:var(--color-background);border:1px solid var(--color-border);border-radius:6px;padding:12px 14px;box-shadow:var(--shadow-md);display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;border-radius:50%;background:color-mix(in srgb, var(--color-success) 10%, transparent);color:var(--color-success);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 14px Inter">Saved</div>
+        <div style="font:400 12px/1.4 Inter;color:var(--color-muted-foreground);margin-top:2px">Risk assessment submitted for approval.</div>
+      </div>
+      <button style="background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;padding:2px;margin:-2px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+  
+    <div style="width:330px;background:var(--color-background);border:1px solid var(--color-border);border-radius:6px;padding:12px 14px;box-shadow:var(--shadow-md);display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;border-radius:50%;background:color-mix(in srgb, var(--color-destructive) 10%, transparent);color:var(--color-destructive);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 14px Inter">Failed</div>
+        <div style="font:400 12px/1.4 Inter;color:var(--color-muted-foreground);margin-top:2px">Could not reach Active Directory.</div>
+      </div>
+      <button style="background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;padding:2px;margin:-2px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+  
+    <div style="width:330px;background:var(--color-background);border:1px solid var(--color-border);border-radius:6px;padding:12px 14px;box-shadow:var(--shadow-md);display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;border-radius:50%;background:color-mix(in srgb, var(--color-warning) 10%, transparent);color:var(--color-warning);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+      </div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 14px Inter">Heads up</div>
+        <div style="font:400 12px/1.4 Inter;color:var(--color-muted-foreground);margin-top:2px">Token expires in 3 days.</div>
+      </div>
+      <button style="background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;padding:2px;margin:-2px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+  
+    <div style="width:330px;background:var(--color-background);border:1px solid var(--color-border);border-radius:6px;padding:12px 14px;box-shadow:var(--shadow-md);display:flex;gap:12px;align-items:flex-start">
+      <div style="width:24px;height:24px;border-radius:50%;background:color-mix(in srgb, var(--color-info) 10%, transparent);color:var(--color-info);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+      </div>
+      <div style="flex:1;min-width:0">
+        <div style="font:600 14px Inter">Notice</div>
+        <div style="font:400 12px/1.4 Inter;color:var(--color-muted-foreground);margin-top:2px">New compliance framework available.</div>
+      </div>
+      <button style="background:transparent;border:none;color:var(--color-muted-foreground);cursor:pointer;padding:2px;margin:-2px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+  
+</div>
+<div class="val" style="margin-top:8px">Note: Info uses <strong>violet-500</strong> per Authority C-2 (Info ≠ blue). HEX shown here on icon backgrounds map to <span class="val">var(--color-success/destructive/warning/info)</span>.</div>
+<div class="src">Source: Authority RQ-2 + Components stack table (sonner ^2.0.7) · bg-background border rounded-md shadow-md · §4.1 status colors</div></div></body></html>

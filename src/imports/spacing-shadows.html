@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;background:var(--color-background);color:var(--color-foreground);font-family:var(--font-sans);}
+  .card{padding:20px;box-sizing:border-box;width:700px;min-height:220px;}
+  .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .lbl{font-size:11px;color:var(--color-muted-foreground);font-weight:500;}
+  .val{font-size:11px;color:var(--color-muted-foreground);font-family:var(--font-mono);}
+  
+</style></head>
+<body><div class="card">
+<div class="row" style="gap:20px;align-items:flex-end;padding:10px 0 30px">
+  
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+      <div style="width:96px;height:60px;background:#fff;border:1px solid #e4e4e7;border-radius:8px;box-shadow:0 1px 2px 0 rgba(0,0,0,.05)"></div>
+      <div style="font-size:12px;font-weight:500">shadow-xs</div>
+      <div class="lbl" style="text-align:center;max-width:96px;font-size:10px">Card · Button · Input</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+      <div style="width:96px;height:60px;background:#fff;border:1px solid #e4e4e7;border-radius:8px;box-shadow:0 1px 3px 0 rgba(0,0,0,.05),0 1px 2px -1px rgba(0,0,0,.05)"></div>
+      <div style="font-size:12px;font-weight:500">shadow-sm</div>
+      <div class="lbl" style="text-align:center;max-width:96px;font-size:10px">—</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+      <div style="width:96px;height:60px;background:#fff;border:1px solid #e4e4e7;border-radius:8px;box-shadow:0 4px 6px -1px rgba(0,0,0,.05),0 2px 4px -2px rgba(0,0,0,.05)"></div>
+      <div style="font-size:12px;font-weight:500">shadow-md</div>
+      <div class="lbl" style="text-align:center;max-width:96px;font-size:10px">Dropdown · Tooltip · Popover</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+      <div style="width:96px;height:60px;background:#fff;border:1px solid #e4e4e7;border-radius:8px;box-shadow:0 10px 15px -3px rgba(0,0,0,.05),0 4px 6px -4px rgba(0,0,0,.05)"></div>
+      <div style="font-size:12px;font-weight:500">shadow-lg</div>
+      <div class="lbl" style="text-align:center;max-width:96px;font-size:10px">Dialog · Sheet</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+      <div style="width:96px;height:60px;background:#fff;border:1px solid #e4e4e7;border-radius:8px;box-shadow:0 20px 25px -5px rgba(0,0,0,.06)"></div>
+      <div style="font-size:12px;font-weight:500">shadow-xl</div>
+      <div class="lbl" style="text-align:center;max-width:96px;font-size:10px">—</div>
+    </div>
+</div>
+<div class="lbl" style="margin-top:6px">Header on scroll → <span class="val">border-b border-border</span> only — never <span class="val">shadow-sm</span> (RL-11).</div>
+</div></body></html>
